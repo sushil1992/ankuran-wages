@@ -36,4 +36,4 @@ localhost:8080/wages/status
 
 
 Command to be used to build (in parent directory):<br/>
-mvn clean install
+mvn clean install -Plocal

@@ -1,11 +1,11 @@
-package com.ankuran.wages.model;
+package com.ankuran.wages.model.response;
 
 /**
  * @author Sushil Mittal.
  * @Created At 18/02/19.
  */
 
-public class SampleRequest {
+public class SampleResponse {
     private String sampleMessage;
 
     public String getSampleMessage() {

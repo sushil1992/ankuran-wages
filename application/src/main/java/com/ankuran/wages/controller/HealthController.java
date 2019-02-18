@@ -1,6 +1,6 @@
 package com.ankuran.wages.controller;
 
-import com.ankuran.wages.model.SampleRequest;
+import com.ankuran.wages.model.response.SampleResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -21,7 +21,7 @@ public class HealthController {
     @GetMapping("/status")
     public ResponseEntity<HttpStatus> getStatus() {
         //Creating sample request object
-        SampleRequest sampleRequest = new SampleRequest();
+        SampleResponse sampleResponse = new SampleResponse();
         return new ResponseEntity<>(HttpStatus.OK);
     }
 }

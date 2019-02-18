@@ -70,7 +70,6 @@
             <artifactId>library</artifactId>
             <version>${library.version}</version>
         </dependency>
-
     </dependencies>
 
     <build>

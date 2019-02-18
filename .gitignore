@@ -1,4 +1,6 @@
 /target/
+application/target/
+library/target/
 .mvn/*
 #!.mvn/wrapper/maven-wrapper.jar
 

@@ -2,6 +2,7 @@ package com.ankuran.wages.resourceImpl;
 
 import com.ankuran.wages.model.CentreDao;
 import com.ankuran.wages.repository.CenterRepository;
+import com.ankuran.wages.repository.EmployeeRepository;
 import com.ankuran.wages.resource.CentreResource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -14,6 +15,9 @@ public class CentreResourceImpl implements CentreResource {
 
     @Autowired
     private CenterRepository centerRepository;
+
+    @Autowired
+    private EmployeeRepository employeeRepository;
 
     @Override
     public ResponseEntity getCentreId(String centreName) {

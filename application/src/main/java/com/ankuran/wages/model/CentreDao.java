@@ -14,6 +14,7 @@ import javax.persistence.Table;
 public class CentreDao {
 
     @Id
+    @Column(name = "id")
     private Long id;
 
     @Column(name = "name")

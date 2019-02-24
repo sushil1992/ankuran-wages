@@ -33,7 +33,7 @@ public class HealthController {
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
-    @GetMapping("findAll")
+    @GetMapping("/findAll")
     public ResponseEntity<List<Centre>> findAllCenter() {
         return new ResponseEntity<>(centerRepository.findAll(), HttpStatus.OK);
     }

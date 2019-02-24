@@ -1,4 +1,4 @@
-package com.ankuran.wages.service;
+package com.ankuran.wages.provider;
 
 import com.ankuran.wages.model.request.SampleRequest;
 

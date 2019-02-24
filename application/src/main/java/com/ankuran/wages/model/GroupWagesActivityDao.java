@@ -12,7 +12,7 @@ import java.util.Date;
  */
 @Entity
 @Table(name = "group_wages_activity")
-public class ActivityDao {
+public class GroupWagesActivityDao {
 
     @Id
     @Column(name = "id")

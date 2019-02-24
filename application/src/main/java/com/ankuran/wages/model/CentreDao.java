@@ -11,7 +11,7 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "centre")
-public class Centre {
+public class CentreDao {
 
     @Id
     private Long id;

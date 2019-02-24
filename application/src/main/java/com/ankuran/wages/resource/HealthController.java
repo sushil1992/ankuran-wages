@@ -1,6 +1,6 @@
-package com.ankuran.wages.controller;
+package com.ankuran.wages.resource;
 
-import com.ankuran.wages.model.Centre;
+import com.ankuran.wages.model.CentreDao;
 import com.ankuran.wages.model.response.SampleResponse;
 import com.ankuran.wages.repository.CenterRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +22,7 @@ public class HealthController {
     private CenterRepository centerRepository;
 
     /**
-     * Sample code for a controller
+     * Sample code for a resource
      *
      * @return
      */
@@ -34,7 +34,7 @@ public class HealthController {
     }
 
     @GetMapping("/findAll")
-    public ResponseEntity<List<Centre>> findAllCenter() {
+    public ResponseEntity<List<CentreDao>> findAllCenter() {
         return new ResponseEntity<>(centerRepository.findAll(), HttpStatus.OK);
     }
 }

@@ -1,8 +1,9 @@
-*/target/*
-*/target/**
+###*/target/* ###
+application/target/**
+library/target/**
 /.class
 .mvn/*
-###target/**
+###target/** ###
 #!.mvn/wrapper/maven-wrapper.jar
 
 ### STS ###

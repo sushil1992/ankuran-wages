@@ -1,6 +1,7 @@
 package com.ankuran.wages.resourceImpl;
 
 import com.ankuran.wages.model.CentreDao;
+import com.ankuran.wages.repository.ActivityRepository;
 import com.ankuran.wages.repository.CenterRepository;
 import com.ankuran.wages.repository.EmployeeRepository;
 import com.ankuran.wages.resource.CentreResource;
@@ -18,6 +19,9 @@ public class CentreResourceImpl implements CentreResource {
 
     @Autowired
     private EmployeeRepository employeeRepository;
+
+    @Autowired
+    private ActivityRepository activityRepository;
 
     @Override
     public ResponseEntity getCentreId(String centreName) {

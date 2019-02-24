@@ -1,9 +1,9 @@
-package com.ankuran.wages.service.impl;
+package com.ankuran.wages.provider.impl;
 
 import com.ankuran.wages.enums.ErrorCode;
 import com.ankuran.wages.exception.base.InvalidRequestException;
 import com.ankuran.wages.model.request.SampleRequest;
-import com.ankuran.wages.service.SampleService;
+import com.ankuran.wages.provider.SampleService;
 import org.springframework.stereotype.Service;
 
 /**

@@ -2,7 +2,7 @@ package com.ankuran.wages.resource;
 
 import com.ankuran.wages.model.request.SampleRequest;
 import com.ankuran.wages.model.response.SampleResponse;
-import com.ankuran.wages.service.SampleService;
+import com.ankuran.wages.provider.SampleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

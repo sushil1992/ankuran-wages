@@ -8,21 +8,33 @@ import java.util.Date;
 
 /**
  * @author Sushil Mittal.
- * @Created At 24/02/19.
+ * @Created At 12/03/19.
  */
 @Entity
-@Table(name = "group_wages_activity")
-public class GroupWagesActivityDao {
+@Table(name = "wages_activity")
+public class WagesActivityDao {
 
     @Id
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "linked_activity_id")
-    private Long linkedActivityId;
+    @Column(name = "wages_activity_key")
+    private Long wagesActivityKey;
+
+    @Column(name = "employee_id")
+    private Long employeeId;
 
     @Column(name = "centre_id")
     private Long centreId;
+
+    @Column(name = "activity_id")
+    private Long activityId;
+
+    @Column(name = "linked_activity_id")
+    private Long linkedActivityId;
+
+    @Column(name = "type")
+    private Long type;
 
     @Column(name = "item_id")
     private Long itemId;
@@ -30,23 +42,23 @@ public class GroupWagesActivityDao {
     @Column(name = "item_name")
     private String itemName;
 
-    @Column(name = "price_per_item")
-    private Long pricePerItem;
+    @Column(name = "due_per_item")
+    private Double duePerItem;
 
     @Column(name = "item_quantity")
-    private Long itemQuantity;
+    private Integer itemQuantity;
 
     @Column(name = "total_amount")
-    private Long totalAmount;
+    private Double totalAmount;
+
+    @Column(name = "changed")
+    private Integer changed;
 
     @Column(name = "misc_info")
     private String miscInfo;
 
     @Column(name = "actor_employee_id")
-    private Long actorEmployeeId;
-
-    @Column(name = "changed")
-    private Byte changed;
+    private Integer actorEmployeeId;
 
     @Column(name = "created_at")
     private Date createdAt;
@@ -65,12 +77,20 @@ public class GroupWagesActivityDao {
         this.id = id;
     }
 
-    public Long getLinkedActivityId() {
-        return linkedActivityId;
+    public Long getWagesActivityKey() {
+        return wagesActivityKey;
     }
 
-    public void setLinkedActivityId(Long linkedActivityId) {
-        this.linkedActivityId = linkedActivityId;
+    public void setWagesActivityKey(Long wagesActivityKey) {
+        this.wagesActivityKey = wagesActivityKey;
+    }
+
+    public Long getEmployeeId() {
+        return employeeId;
+    }
+
+    public void setEmployeeId(Long employeeId) {
+        this.employeeId = employeeId;
     }
 
     public Long getCentreId() {
@@ -79,6 +99,30 @@ public class GroupWagesActivityDao {
 
     public void setCentreId(Long centreId) {
         this.centreId = centreId;
+    }
+
+    public Long getActivityId() {
+        return activityId;
+    }
+
+    public void setActivityId(Long activityId) {
+        this.activityId = activityId;
+    }
+
+    public Long getLinkedActivityId() {
+        return linkedActivityId;
+    }
+
+    public void setLinkedActivityId(Long linkedActivityId) {
+        this.linkedActivityId = linkedActivityId;
+    }
+
+    public Long getType() {
+        return type;
+    }
+
+    public void setType(Long type) {
+        this.type = type;
     }
 
     public Long getItemId() {
@@ -97,28 +141,36 @@ public class GroupWagesActivityDao {
         this.itemName = itemName;
     }
 
-    public Long getPricePerItem() {
-        return pricePerItem;
+    public Double getDuePerItem() {
+        return duePerItem;
     }
 
-    public void setPricePerItem(Long pricePerItem) {
-        this.pricePerItem = pricePerItem;
+    public void setDuePerItem(Double duePerItem) {
+        this.duePerItem = duePerItem;
     }
 
-    public Long getItemQuantity() {
+    public Integer getItemQuantity() {
         return itemQuantity;
     }
 
-    public void setItemQuantity(Long itemQuantity) {
+    public void setItemQuantity(Integer itemQuantity) {
         this.itemQuantity = itemQuantity;
     }
 
-    public Long getTotalAmount() {
+    public Double getTotalAmount() {
         return totalAmount;
     }
 
-    public void setTotalAmount(Long totalAmount) {
+    public void setTotalAmount(Double totalAmount) {
         this.totalAmount = totalAmount;
+    }
+
+    public Integer getChanged() {
+        return changed;
+    }
+
+    public void setChanged(Integer changed) {
+        this.changed = changed;
     }
 
     public String getMiscInfo() {
@@ -129,20 +181,12 @@ public class GroupWagesActivityDao {
         this.miscInfo = miscInfo;
     }
 
-    public Long getActorEmployeeId() {
+    public Integer getActorEmployeeId() {
         return actorEmployeeId;
     }
 
-    public void setActorEmployeeId(Long actorEmployeeId) {
+    public void setActorEmployeeId(Integer actorEmployeeId) {
         this.actorEmployeeId = actorEmployeeId;
-    }
-
-    public Byte getChanged() {
-        return changed;
-    }
-
-    public void setChanged(Byte changed) {
-        this.changed = changed;
     }
 
     public Date getCreatedAt() {

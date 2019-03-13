@@ -12,4 +12,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface EmployeeRepository extends JpaRepository<EmployeeDao, Long> {
     public EmployeeDao findByCenterIdAndAndFullName(Long centreId, String fullName);
+
 }
